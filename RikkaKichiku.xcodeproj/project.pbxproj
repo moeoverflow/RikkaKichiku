@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88E70C9C213BAB72007D820A /* RikkaKichikuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E70C9B213BAB72007D820A /* RikkaKichikuView.h */; };
-		88E70C9E213BAB72007D820A /* RikkaKichikuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E70C9D213BAB72007D820A /* RikkaKichikuView.m */; };
+		88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88E70C98213BAB72007D820A /* RikkaKichiku.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RikkaKichiku.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E70C9B213BAB72007D820A /* RikkaKichikuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RikkaKichikuView.h; sourceTree = "<group>"; };
-		88E70C9D213BAB72007D820A /* RikkaKichikuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RikkaKichikuView.m; sourceTree = "<group>"; };
 		88E70C9F213BAB72007D820A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichiku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +46,8 @@
 		88E70C9A213BAB72007D820A /* RikkaKichiku */ = {
 			isa = PBXGroup;
 			children = (
-				88E70C9B213BAB72007D820A /* RikkaKichikuView.h */,
-				88E70C9D213BAB72007D820A /* RikkaKichikuView.m */,
 				88E70C9F213BAB72007D820A /* Info.plist */,
+				88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */,
 			);
 			path = RikkaKichiku;
 			sourceTree = "<group>";
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E70C9C213BAB72007D820A /* RikkaKichikuView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +94,7 @@
 				TargetAttributes = {
 					88E70C97213BAB72007D820A = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -133,7 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E70C9E213BAB72007D820A /* RikkaKichikuView.m in Sources */,
+				88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +140,7 @@
 		88E70CA0213BAB72007D820A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -202,6 +200,7 @@
 		88E70CA1213BAB72007D820A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -254,12 +253,20 @@
 		88E70CA3213BAB72007D820A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichiku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -267,12 +274,19 @@
 		88E70CA4213BAB72007D820A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichiku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
