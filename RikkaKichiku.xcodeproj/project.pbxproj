@@ -284,7 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichiku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -304,7 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichiku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
