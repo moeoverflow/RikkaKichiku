@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A36947C2337B12A00DCA9EC /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3694792337B12A00DCA9EC /* DefaultsManager.swift */; };
+		7A36947D2337B12A00DCA9EC /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */; };
+		7A36947E2337B12A00DCA9EC /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */; };
+		7A36948A2337C9A800DCA9EC /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3694892337C9A800DCA9EC /* thumbnail.png */; };
 		88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A3694792337B12A00DCA9EC /* DefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
+		7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		7A3694892337C9A800DCA9EC /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		88E70C98213BAB72007D820A /* RikkaKichiku.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RikkaKichiku.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E70C9F213BAB72007D820A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichiku.swift; sourceTree = "<group>"; };
@@ -46,6 +54,10 @@
 		88E70C9A213BAB72007D820A /* RikkaKichiku */ = {
 			isa = PBXGroup;
 			children = (
+				7A3694892337C9A800DCA9EC /* thumbnail.png */,
+				7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */,
+				7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */,
+				7A3694792337B12A00DCA9EC /* DefaultsManager.swift */,
 				88E70C9F213BAB72007D820A /* Info.plist */,
 				88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */,
 			);
@@ -89,7 +101,7 @@
 		88E70C8F213BAB72007D820A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Moeoverflow;
 				TargetAttributes = {
 					88E70C97213BAB72007D820A = {
@@ -104,6 +116,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 88E70C8E213BAB72007D820A;
 			productRefGroup = 88E70C99213BAB72007D820A /* Products */;
@@ -120,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A36948A2337C9A800DCA9EC /* thumbnail.png in Resources */,
+				7A36947E2337B12A00DCA9EC /* ConfigureSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */,
+				7A36947D2337B12A00DCA9EC /* ConfigureSheetController.swift in Sources */,
+				7A36947C2337B12A00DCA9EC /* DefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +206,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,10 +260,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -254,8 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -266,7 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichiku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -275,8 +295,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -286,7 +308,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichiku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;

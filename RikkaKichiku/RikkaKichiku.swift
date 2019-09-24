@@ -12,6 +12,9 @@ import AVKit
 
 class RikkaKichiku: ScreenSaverView {
     
+    var defaultsManager: DefaultsManager = DefaultsManager()
+    lazy var sheetController: ConfigureSheetController = ConfigureSheetController()
+    
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
         self.animationTimeInterval = 1.0 / 30.0
@@ -21,6 +24,14 @@ class RikkaKichiku: ScreenSaverView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
+    }
+    
+    override var hasConfigureSheet: Bool {
+        return true
+    }
+
+    override var configureSheet: NSWindow? {
+        return sheetController.window
     }
     
     var player: AVPlayer!
@@ -38,7 +49,15 @@ class RikkaKichiku: ScreenSaverView {
         layer.frame = self.bounds
         
         // Init a AVPlayer
-        let videoUrl = URL(string: "https://animeloop.org/files/mp4_1080p/598f4b40ed178675bf1ee936.mp4")!
+        let videoUrlStr = defaultsManager.videoUrl
+        let videoUrlArr = videoUrlStr.split{$0 == ","}.map(String.init)
+        let videoUrlArrSize = videoUrlArr.count
+        var videoUrl = URL(string: "https://animeloop.org/files/mp4_1080p/598f4b40ed178675bf1ee936.mp4")!
+        if(videoUrlArrSize > 0)
+        {
+            let randomNumber = Int.random(in: 0..<videoUrlArrSize)
+            videoUrl = URL(string: videoUrlArr[randomNumber])!
+        }
         let playerItem = AVPlayerItem(url: videoUrl)
         player = AVPlayer(playerItem: playerItem)
         player.play()
