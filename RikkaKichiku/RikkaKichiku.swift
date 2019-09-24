@@ -49,8 +49,8 @@ class RikkaKichiku: ScreenSaverView {
         layer.frame = self.bounds
         
         // Init a AVPlayer
-        let videoUrlStr = defaultsManager.getVideoUrl()
-        let videoUrlArr = videoUrlStr!.split{$0 == ","}.map(String.init)
+        let videoUrlStr = defaultsManager.videoUrl
+        let videoUrlArr = videoUrlStr.split{$0 == ","}.map(String.init)
         let videoUrlArrSize = videoUrlArr.count
         var videoUrl = URL(string: "https://animeloop.org/files/mp4_1080p/598f4b40ed178675bf1ee936.mp4")!
         if(videoUrlArrSize > 0)
