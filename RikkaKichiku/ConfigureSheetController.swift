@@ -10,7 +10,6 @@ import Cocoa
 
 class ConfigureSheetController : NSObject {
     var defaultsManager = DefaultsManager()
-    var callback: (() -> Void)?
 
     @IBOutlet var window: NSWindow?
     @IBOutlet var videoUrl: NSTextField!

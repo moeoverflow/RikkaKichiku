@@ -26,13 +26,13 @@ class DefaultsManager {
     }
     
     func setAttribute(_ attribute: Any, key: String) {
-        defaults.set(NSKeyedArchiver.archivedData(withRootObject: attribute), forKey: key)
+        defaults.set(try? NSKeyedArchiver.archivedData(withRootObject: attribute, requiringSecureCoding: true), forKey: key)
         defaults.synchronize()
     }
 
     func getVideoUrl() -> String? {
         if let info = defaults.object(forKey: "videoUrl") as? Data {
-            return NSKeyedUnarchiver.unarchiveObject(with: info) as? String
+            return try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(info) as? String
         }
         return nil
     }
