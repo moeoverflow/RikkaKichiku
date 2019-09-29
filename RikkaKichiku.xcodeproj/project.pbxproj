@@ -11,6 +11,7 @@
 		7A36947D2337B12A00DCA9EC /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */; };
 		7A36947E2337B12A00DCA9EC /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */; };
 		7A36948A2337C9A800DCA9EC /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3694892337C9A800DCA9EC /* thumbnail.png */; };
+		8880DED82340D4CC003B6D6A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8880DED72340D4CC003B6D6A /* Alamofire.framework */; };
 		88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 		7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
 		7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		7A3694892337C9A800DCA9EC /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		8880DED72340D4CC003B6D6A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		88E70C98213BAB72007D820A /* RikkaKichiku.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RikkaKichiku.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E70C9F213BAB72007D820A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichiku.swift; sourceTree = "<group>"; };
@@ -29,15 +31,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8880DED82340D4CC003B6D6A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8880DED62340D4B6003B6D6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8880DED72340D4CC003B6D6A /* Alamofire.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		88E70C8E213BAB72007D820A = {
 			isa = PBXGroup;
 			children = (
+				8880DED62340D4B6003B6D6A /* Frameworks */,
 				88E70C9A213BAB72007D820A /* RikkaKichiku */,
 				88E70C99213BAB72007D820A /* Products */,
 			);
@@ -85,6 +97,7 @@
 				88E70C94213BAB72007D820A /* Sources */,
 				88E70C95213BAB72007D820A /* Frameworks */,
 				88E70C96213BAB72007D820A /* Resources */,
+				88DFB1F72340DD8200EC1575 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -139,6 +152,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88DFB1F72340DD8200EC1575 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88E70C94213BAB72007D820A /* Sources */ = {
@@ -276,6 +312,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +339,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
