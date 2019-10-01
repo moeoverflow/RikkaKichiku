@@ -25,6 +25,8 @@
 		88C212FB234335F600DBE630 /* LoopItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212F22342C90300DBE630 /* LoopItemLayer.swift */; };
 		88C212FC234335F700DBE630 /* AnimeloopAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */; };
 		88C212FD234335F900DBE630 /* GridLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212EA2342B06B00DBE630 /* GridLayer.swift */; };
+		88C212FF234338AA00DBE630 /* TimerItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212FE234338AA00DBE630 /* TimerItemLayer.swift */; };
+		88C21300234338AD00DBE630 /* TimerItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212FE234338AA00DBE630 /* TimerItemLayer.swift */; };
 		88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,7 @@
 		88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeloopAPI.swift; sourceTree = "<group>"; };
 		88C212F22342C90300DBE630 /* LoopItemLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopItemLayer.swift; sourceTree = "<group>"; };
 		88C212F523432BBF00DBE630 /* RikkaKichikuLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichikuLayer.swift; sourceTree = "<group>"; };
+		88C212FE234338AA00DBE630 /* TimerItemLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerItemLayer.swift; sourceTree = "<group>"; };
 		88E70C98213BAB72007D820A /* RikkaKichiku.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RikkaKichiku.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E70C9F213BAB72007D820A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichiku.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 				88C212EA2342B06B00DBE630 /* GridLayer.swift */,
 				88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */,
 				88C212F22342C90300DBE630 /* LoopItemLayer.swift */,
+				88C212FE234338AA00DBE630 /* TimerItemLayer.swift */,
 				88C212F523432BBF00DBE630 /* RikkaKichikuLayer.swift */,
 			);
 			path = Core;
@@ -295,6 +299,7 @@
 				88C212EC2342B06B00DBE630 /* GridLayer.swift in Sources */,
 				88C212D92342AF4300DBE630 /* AppDelegate.swift in Sources */,
 				88C212EF2342B53100DBE630 /* AnimeloopAPI.swift in Sources */,
+				88C21300234338AD00DBE630 /* TimerItemLayer.swift in Sources */,
 				88C212F723432BBF00DBE630 /* RikkaKichikuLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +312,7 @@
 				88C212FB234335F600DBE630 /* LoopItemLayer.swift in Sources */,
 				88C212FA234335F400DBE630 /* RikkaKichikuLayer.swift in Sources */,
 				7A36947D2337B12A00DCA9EC /* ConfigureSheetController.swift in Sources */,
+				88C212FF234338AA00DBE630 /* TimerItemLayer.swift in Sources */,
 				7A36947C2337B12A00DCA9EC /* DefaultsManager.swift in Sources */,
 				88C212FC234335F700DBE630 /* AnimeloopAPI.swift in Sources */,
 				88C212FD234335F900DBE630 /* GridLayer.swift in Sources */,

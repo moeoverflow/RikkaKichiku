@@ -39,6 +39,9 @@ class LoopItemLayer: CALayer {
     }
     
     deinit {
+        self.player.pause()
+        self.player = nil
+        self.playerLayer = nil
         if self.observer != nil {
             NotificationCenter.default.removeObserver(self.observer!)
         }

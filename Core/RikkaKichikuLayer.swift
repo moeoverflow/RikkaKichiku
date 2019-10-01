@@ -57,13 +57,11 @@ class RikkaKichikuLayer: CALayer {
     }
     
     private func initPlayers(urls: [String]) {
-
         self.gridLayer.initGrid(cols: self.gridCols, rows: self.gridRows, renderItem: { (col, row) in
             let url = urls[col * self.gridCols + row]
             let playerLayer = LoopItemLayer(url: url)
             return playerLayer
         })
-        
     }
 
     private func initTimer() {

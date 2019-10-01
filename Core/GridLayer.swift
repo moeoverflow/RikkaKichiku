@@ -55,7 +55,7 @@ class GridLayer: CALayer {
         }
     }
     
-    func replaceItem(col: Int, row: Int, newLayer: LoopItemLayer) {
+    func replaceItem(col: Int, row: Int, newLayer: CALayer) {
         guard let cellLayer = self.cellLayers["\(col):\(row)"] else { return }
         guard let itemLayer = self.itemLayers["\(col):\(row)"] else { return }
         
@@ -64,7 +64,7 @@ class GridLayer: CALayer {
         cellLayer.addSublayer(newLayer)
 
         // TODO: change implement, do animation after AVPlayer ready callback
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { _ in
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false, block: { _ in
 
             CATransaction.begin()
             CATransaction.setDisableActions(true)
@@ -87,7 +87,6 @@ class GridLayer: CALayer {
             itemLayer.add(animationOut, forKey: "position")
             newLayer.add(animationIn, forKey: "position")
             
-
             CATransaction.commit()
         })
     }
