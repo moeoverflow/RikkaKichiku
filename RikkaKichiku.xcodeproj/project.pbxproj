@@ -11,6 +11,22 @@
 		7A36947D2337B12A00DCA9EC /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */; };
 		7A36947E2337B12A00DCA9EC /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */; };
 		7A36948A2337C9A800DCA9EC /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3694892337C9A800DCA9EC /* thumbnail.png */; };
+		8880DED82340D4CC003B6D6A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8880DED72340D4CC003B6D6A /* Alamofire.framework */; };
+		88C212D92342AF4300DBE630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212D82342AF4300DBE630 /* AppDelegate.swift */; };
+		88C212DB2342AF4300DBE630 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212DA2342AF4300DBE630 /* ViewController.swift */; };
+		88C212DD2342AF4400DBE630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C212DC2342AF4400DBE630 /* Assets.xcassets */; };
+		88C212E02342AF4400DBE630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C212DE2342AF4400DBE630 /* Main.storyboard */; };
+		88C212EC2342B06B00DBE630 /* GridLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212EA2342B06B00DBE630 /* GridLayer.swift */; };
+		88C212EF2342B53100DBE630 /* AnimeloopAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */; };
+		88C212F02342BCF800DBE630 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8880DED72340D4CC003B6D6A /* Alamofire.framework */; };
+		88C212F42342C90300DBE630 /* LoopItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212F22342C90300DBE630 /* LoopItemLayer.swift */; };
+		88C212F723432BBF00DBE630 /* RikkaKichikuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212F523432BBF00DBE630 /* RikkaKichikuLayer.swift */; };
+		88C212FA234335F400DBE630 /* RikkaKichikuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212F523432BBF00DBE630 /* RikkaKichikuLayer.swift */; };
+		88C212FB234335F600DBE630 /* LoopItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212F22342C90300DBE630 /* LoopItemLayer.swift */; };
+		88C212FC234335F700DBE630 /* AnimeloopAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */; };
+		88C212FD234335F900DBE630 /* GridLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212EA2342B06B00DBE630 /* GridLayer.swift */; };
+		88C212FF234338AA00DBE630 /* TimerItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212FE234338AA00DBE630 /* TimerItemLayer.swift */; };
+		88C21300234338AD00DBE630 /* TimerItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C212FE234338AA00DBE630 /* TimerItemLayer.swift */; };
 		88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,26 +35,82 @@
 		7A36947A2337B12A00DCA9EC /* ConfigureSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
 		7A36947B2337B12A00DCA9EC /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		7A3694892337C9A800DCA9EC /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		8880DED72340D4CC003B6D6A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		88C212D62342AF4300DBE630 /* RikkaKichikuDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RikkaKichikuDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C212D82342AF4300DBE630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88C212DA2342AF4300DBE630 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88C212DC2342AF4400DBE630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88C212DF2342AF4400DBE630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88C212E12342AF4400DBE630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C212EA2342B06B00DBE630 /* GridLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayer.swift; sourceTree = "<group>"; };
+		88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeloopAPI.swift; sourceTree = "<group>"; };
+		88C212F22342C90300DBE630 /* LoopItemLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopItemLayer.swift; sourceTree = "<group>"; };
+		88C212F523432BBF00DBE630 /* RikkaKichikuLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichikuLayer.swift; sourceTree = "<group>"; };
+		88C212FE234338AA00DBE630 /* TimerItemLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerItemLayer.swift; sourceTree = "<group>"; };
 		88E70C98213BAB72007D820A /* RikkaKichiku.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RikkaKichiku.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E70C9F213BAB72007D820A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E70CA5213BAC4D007D820A /* RikkaKichiku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikkaKichiku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		88C212D32342AF4300DBE630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C212F02342BCF800DBE630 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88E70C95213BAB72007D820A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8880DED82340D4CC003B6D6A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8880DED62340D4B6003B6D6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8880DED72340D4CC003B6D6A /* Alamofire.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		88C212D72342AF4300DBE630 /* RikkaKichikuDev */ = {
+			isa = PBXGroup;
+			children = (
+				88C212D82342AF4300DBE630 /* AppDelegate.swift */,
+				88C212DA2342AF4300DBE630 /* ViewController.swift */,
+				88C212DC2342AF4400DBE630 /* Assets.xcassets */,
+				88C212DE2342AF4400DBE630 /* Main.storyboard */,
+				88C212E12342AF4400DBE630 /* Info.plist */,
+			);
+			path = RikkaKichikuDev;
+			sourceTree = "<group>";
+		};
+		88C212E62342AFA300DBE630 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				88C212EA2342B06B00DBE630 /* GridLayer.swift */,
+				88C212ED2342B53100DBE630 /* AnimeloopAPI.swift */,
+				88C212F22342C90300DBE630 /* LoopItemLayer.swift */,
+				88C212FE234338AA00DBE630 /* TimerItemLayer.swift */,
+				88C212F523432BBF00DBE630 /* RikkaKichikuLayer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		88E70C8E213BAB72007D820A = {
 			isa = PBXGroup;
 			children = (
+				88C212E62342AFA300DBE630 /* Core */,
 				88E70C9A213BAB72007D820A /* RikkaKichiku */,
+				88C212D72342AF4300DBE630 /* RikkaKichikuDev */,
+				8880DED62340D4B6003B6D6A /* Frameworks */,
 				88E70C99213BAB72007D820A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				88E70C98213BAB72007D820A /* RikkaKichiku.saver */,
+				88C212D62342AF4300DBE630 /* RikkaKichikuDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +150,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		88C212D52342AF4300DBE630 /* RikkaKichikuDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88C212E52342AF4400DBE630 /* Build configuration list for PBXNativeTarget "RikkaKichikuDev" */;
+			buildPhases = (
+				88C212D22342AF4300DBE630 /* Sources */,
+				88C212D32342AF4300DBE630 /* Frameworks */,
+				88C212D42342AF4300DBE630 /* Resources */,
+				88C212F12342BD5500DBE630 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RikkaKichikuDev;
+			productName = RikkaKichikuDev;
+			productReference = 88C212D62342AF4300DBE630 /* RikkaKichikuDev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		88E70C97213BAB72007D820A /* RikkaKichiku */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88E70CA2213BAB72007D820A /* Build configuration list for PBXNativeTarget "RikkaKichiku" */;
@@ -85,6 +176,7 @@
 				88E70C94213BAB72007D820A /* Sources */,
 				88E70C95213BAB72007D820A /* Frameworks */,
 				88E70C96213BAB72007D820A /* Resources */,
+				88DFB1F72340DD8200EC1575 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -101,9 +193,13 @@
 		88E70C8F213BAB72007D820A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Moeoverflow;
 				TargetAttributes = {
+					88C212D52342AF4300DBE630 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					88E70C97213BAB72007D820A = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -124,11 +220,21 @@
 			projectRoot = "";
 			targets = (
 				88E70C97213BAB72007D820A /* RikkaKichiku */,
+				88C212D52342AF4300DBE630 /* RikkaKichikuDev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		88C212D42342AF4300DBE630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C212DD2342AF4400DBE630 /* Assets.xcassets in Resources */,
+				88C212E02342AF4400DBE630 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88E70C96213BAB72007D820A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,20 +246,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88C212F12342BD5500DBE630 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		88DFB1F72340DD8200EC1575 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		88C212D22342AF4300DBE630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C212DB2342AF4300DBE630 /* ViewController.swift in Sources */,
+				88C212F42342C90300DBE630 /* LoopItemLayer.swift in Sources */,
+				88C212EC2342B06B00DBE630 /* GridLayer.swift in Sources */,
+				88C212D92342AF4300DBE630 /* AppDelegate.swift in Sources */,
+				88C212EF2342B53100DBE630 /* AnimeloopAPI.swift in Sources */,
+				88C21300234338AD00DBE630 /* TimerItemLayer.swift in Sources */,
+				88C212F723432BBF00DBE630 /* RikkaKichikuLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88E70C94213BAB72007D820A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88E70CA6213BAC4D007D820A /* RikkaKichiku.swift in Sources */,
+				88C212FB234335F600DBE630 /* LoopItemLayer.swift in Sources */,
+				88C212FA234335F400DBE630 /* RikkaKichikuLayer.swift in Sources */,
 				7A36947D2337B12A00DCA9EC /* ConfigureSheetController.swift in Sources */,
+				88C212FF234338AA00DBE630 /* TimerItemLayer.swift in Sources */,
 				7A36947C2337B12A00DCA9EC /* DefaultsManager.swift in Sources */,
+				88C212FC234335F700DBE630 /* AnimeloopAPI.swift in Sources */,
+				88C212FD234335F900DBE630 /* GridLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		88C212DE2342AF4400DBE630 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88C212DF2342AF4400DBE630 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		88C212E32342AF4400DBE630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RikkaKichikuDev/RikkaKichikuDev.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RikkaKichikuDev/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichikuDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88C212E42342AF4400DBE630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RikkaKichikuDev/RikkaKichikuDev.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RikkaKichikuDev/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moeoverflow.RikkaKichikuDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		88E70CA0213BAB72007D820A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +504,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +531,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = RikkaKichiku/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +552,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		88C212E52342AF4400DBE630 /* Build configuration list for PBXNativeTarget "RikkaKichikuDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88C212E32342AF4400DBE630 /* Debug */,
+				88C212E42342AF4400DBE630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		88E70C92213BAB72007D820A /* Build configuration list for PBXProject "RikkaKichiku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
